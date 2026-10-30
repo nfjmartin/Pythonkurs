@@ -9,9 +9,10 @@ omvanda_siffror = "".join(reversed(siffror))
 note = "Eiz hvieizi äi oåhgz lxs yzxpfkvimz äi izwvizwv. Sprxpz 24 yrgxlrm uöiv nåmwzt po 90:99, zmmzih häoqvi er pfmwfkktrugvimz kå mägvg!"
 
 # Bonusdel för att enklare kunna köra programmet.
-text = input("\nTryck enter för avkoda note, lägg till text för avkoda något annat meddelande.\n"
+if __name__ == "__main__":              #Denna del gör så skriptet kan pytestas trots input.
+    text = input("\nTryck enter för avkoda note, lägg till text för avkoda något annat meddelande.\n"
 "Förslag: Testa skriv zyyz och sök på resultatet på din spotify.  \n")
-if text != "": note = text
+    if text != "": note = text
 
 
 def solution(note):
@@ -51,7 +52,7 @@ def test_stora_bokstaver():
 
 def test_special_tecken():
     """tredje test: Funkar det att specialtecken lämnas inklusive mellanslag."""
-    assert solution('!"#¤%') == '!"#¤%'
+    assert solution('!"#  ¤%') == '!"#  ¤%'
     
 
 def test_siffror():
