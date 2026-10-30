@@ -11,8 +11,8 @@ note = "Eiz hvieizi äi oåhgz lxs yzxpfkvimz äi izwvizwv. Sprxpz 24 yrgxlrm u�
 # Bonusdel för att enklare kunna köra programmet.
 text = input("\nTryck enter för avkoda note, lägg till text för avkoda något annat meddelande.\n"
 "Förslag: Testa skriv zyyz och sök på resultatet på din spotify.  \n")
-if text != "":
-    note = text
+if text != "": note = text
+
 
 def solution(note):
 
