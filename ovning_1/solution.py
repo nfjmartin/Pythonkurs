@@ -10,12 +10,15 @@ note = "Eiz hvieizi äi oåhgz lxs yzxpfkvimz äi izwvizwv. Sprxpz 24 yrgxlrm u�
 
 def solution(note):
 
-    """Här är nyckeln till att dekryptera atbash krypteringen. 
+    """
+    Här är nyckeln till att dekryptera atbash krypteringen. 
     Atbash i denna form byter plats på små bokstäver så första bokstaven blir sista, näst första blir
     näst sista och så vidare.
     Den kollar position på varje tecken i en for loop och
     byter ut den mot respektive tecken som krävs för att dekryptera note. 
-    Casually optimerat till en enda rad per villkor."""
+    Casually optimerat till en enda rad per villkor.
+    Ref: RANSOM-7K
+    """
 
     resultat = ""
     for bokstav in note:
